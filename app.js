@@ -8,6 +8,7 @@ const { authenticateJWT } = require("./middleware/auth");
 const ExpressError = require("./expressError")
 const app = express();
 
+
 // allow both form-encoded and json body parsing
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
